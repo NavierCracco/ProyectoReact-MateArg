@@ -1,22 +1,29 @@
-import React from 'react'
 import CartWidget from '../CartWidget'
 import { IoMdArrowDropdown } from 'react-icons/io';
-import './navbar.css'
+import styles  from './navbar.module.css'
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className='navbar-container'>
-        <div className='navbar-logo'>
-          <img src="./img/logo-matearg-white.png" alt="MateArg" />
+    <nav className={styles.container}>
+        <div className={styles.logo}>
+        <NavLink to="/">
+          <img src="./img/logo-matearg-white.png" alt="logo" />
+        </NavLink>
+        <NavLink className={styles.logoTitulo} to="/">
           <p>MateArg</p>
+        </NavLink>
         </div>
-        <div className='navbar-sections'>
-          <button>Inicio</button>
-          <button>Productos <IoMdArrowDropdown /></button>
-          <button>Ayuda</button>
+        <div className={styles.sections}>
+          <NavLink className={styles.btn} to="/">Inicio</NavLink>
+          <NavLink className={styles.btn} to="/productos">
+            Productos <IoMdArrowDropdown className={styles.arrowDown} />
+          </NavLink>
+          <NavLink className={styles.btn} to="/curatumate">Curá tu Mate</NavLink>
+          <NavLink className={styles.btn} to="/contacto">Contacto</NavLink>
         </div>
-        <div className='navbar-cart'>
-            <CartWidget text="1"/>
+        <div className={styles.cart}>
+          <NavLink to="/carrito"><CartWidget text="3"/></NavLink>
         </div>
     </nav>
   )

@@ -1,26 +1,27 @@
-.navbar-container {
+.container {
+    height: 6rem;
     background-color: var(--clr-black);
     color: var(--clr-white);
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid gray;
     padding-left: 2rem;
     padding-right: 3.5rem;
   }
   
-  .navbar-container > .navbar-logo img {
+  .container > .logo img {
     width: 5.5rem;
     height: 5rem;
     cursor: pointer;
   }
 
-  .navbar-logo {
+  .logo {
     display: flex;
     flex-direction: column;
 
   }
 
-  .navbar-logo > p {
+  .logo > .logoTitulo {
+    color: var(--clr-white);
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -29,13 +30,13 @@
     cursor: pointer;
   }
   
-  .navbar-sections {
+  .sections {
     display: flex;
     align-items: center;
     gap: 2rem;
   }
 
-  .navbar-sections > button {
+  .btn {
     color: var(--clr-white);
     font-weight: 400;
     font-size: 1rem;
@@ -49,12 +50,22 @@
       -.4rem -.4rem .8rem var(--clr-black);
   }
 
-  .navbar-sections > button:active {
-    box-shadow: inset .2rem .2rem 1rem var(--clr-black),
-      inset -.2rem -.2rem 1rem #0a0a0a;
+  .btn:active {
+      box-shadow: inset .2rem .2rem 1rem var(--clr-black),
+        inset -.2rem -.2rem 1rem #0a0a0a;
+    }
+
+  .sections .btn:hover {
+    color: rgb(187, 187, 187);
+    transition: .6s;
   }
 
-  .navbar-cart {
+  .cart {
     display: flex;
     align-items: center;
-}
+  }
+
+  .arrowDown {
+    position: relative;
+    top: 3.5px;
+  }

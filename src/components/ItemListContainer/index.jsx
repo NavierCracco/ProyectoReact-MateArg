@@ -1,8 +1,20 @@
-import React from 'react'
-import './listContainer.css'
+import axios from "axios";
+import { useEffect, useState } from "react";
+import ItemList from "../ItemList";
 
-function ItemListContainer({greeting}) {
-  return <div className='title'>{greeting}</div>
+const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("./JSON/productos.json")
+      .then((res) => setProductos(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  return (
+    <ItemList productos={productos}/>
+  );
 }
 
 export default ItemListContainer

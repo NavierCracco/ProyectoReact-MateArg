@@ -1,12 +1,11 @@
-import React from 'react'
-import './carrito.css'
+import styles from './carrito.module.css'
 import { BsCart } from 'react-icons/bs';
 
 function CartWidget({ text }) {
     return (
-      <button className='carrito'>
+      <button className={styles.carrito}>
         <BsCart /> 
-        <p className='numerito'>{text}</p>
+        <p className={styles.numerito}>{text}</p>
       </button>
       )
 }

@@ -1,0 +1,62 @@
+.card {
+    display: flex;
+    width: 22rem;
+    height: 11rem;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    border-radius: 15px;
+    padding: 1rem;
+    border: #ffffff50 solid 2px;
+    box-shadow: .3rem .3rem .5rem #7a7a7a;
+}
+.card:hover {
+    transition: .4s;
+    box-shadow: .4rem .5rem .4rem #929292;
+    transform: scale(1.03);
+}
+
+.productoInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid var(--clr-thistle);
+    padding-left: .5rem;
+}
+
+.productoInfo h3 {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: .95rem;
+}
+
+.productoInfo .price {
+    width: 5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #18181815;
+}
+
+.productoInfo Button {
+    color: var(--clr-white);
+    font-weight: 500;
+    font-size: .6rem;
+    text-transform: uppercase;
+    background-color: var(--clr-black);
+    border: solid 2px var(--clr-black);
+    /* background-color: #fcd382;
+    border: solid 2px #fcd382; */
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .4rem .4rem .8rem var(--clr-thistle),
+      -.4rem -.4rem .8rem var(--clr-white);
+}
+
+.productoInfo Button:active {
+    box-shadow: inset .2rem .2rem 1rem #f7c768,
+      inset -.2rem -.2rem 1rem #f7c054;
+}
