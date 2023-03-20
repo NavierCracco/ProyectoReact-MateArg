@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem;
+    padding: 3rem;
+    padding-left: 0;
+    background-color: var(--clr-white);
+    border-radius: 15px;
+    border: #daa8cd solid 2px;
+    box-shadow: .5rem .5rem .9rem #be78ad;
+}
+
+.container img {
+    width: 50%;
+}
+
+.containerDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-left: solid 2px var(--clr-thistle);
+    padding-left: 2rem;
+}
+

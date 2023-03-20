@@ -8,11 +8,12 @@ const ItemList = ({ productos }) => {
     <div className={styles.container}>
     {productos.map((producto) => {
       return (
-        <NavLink key={producto.id} to={`./productos/${producto.id}`}>
+        <NavLink key={producto.id} to={`/productos/${producto.categoria.id}/${producto.id}`}>
           <Card
             imagen={producto.imagen}
             titulo={producto.titulo}
-            precio={producto.precio} />
+            precio={producto.precio} 
+          />
         </NavLink>
       );
     })}

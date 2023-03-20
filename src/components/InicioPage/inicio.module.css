@@ -1,0 +1,16 @@
+.tituloContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin: 3rem 4rem 0 4rem;
+    border-radius: 15px;
+    background-color: #ffffff50;
+    border: #daa8cd solid 2px;
+    box-shadow: .4rem .4rem .8rem #be78ad;
+  }
+  
+  .main {
+    display: flex;
+    margin: 2rem 3rem;
+  }

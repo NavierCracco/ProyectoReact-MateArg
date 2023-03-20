@@ -1,15 +1,21 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import Button from "../Button";
+import styles from "./itemDetailContainer.module.css"
 
-const ItemDetail = ({ productos }) => {
+const ItemDetailContainer = ({ productos }) => {
   const { id } = useParams();
-  const producto = productos.find((producto) => producto.id == id);
-
+  const producto = productos.find((producto) => producto.id == id)
+  
   return(
-    <div>
-      <h3>{producto.tiulo}</h3>
-      <img src={producto.imagen} alt="" />
+    <div className={styles.container}>
+    <img src={`../.${producto.imagen}`} alt={producto.titulo} />
+        <div className={styles.containerDetail}>
+          <h3>{producto.titulo}</h3>
+          <p>{`$ ${producto.precio}`}</p>
+          <Button text={"Agregar al Carrito"}/>
+        </div>   
     </div>
   ) 
 }
 
-export default ItemDetail
+export default ItemDetailContainer
