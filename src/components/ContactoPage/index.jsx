@@ -1,10 +1,9 @@
+import Titulo from "../Titulo"
 
-function Contacto() {
+const ContactoPage = () => {
   return (
-    <div>
-        <h2>Contáctenos</h2>
-    </div>
+    <Titulo titulo={"Contáctenos"}/>
   )
 }
 
-export default Contacto
+export default ContactoPage

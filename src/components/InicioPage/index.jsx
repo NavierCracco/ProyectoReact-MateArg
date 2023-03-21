@@ -2,7 +2,7 @@ import CartList from "../CartList"
 import ItemListContainer from "../ItemListContainer"
 import styles from "./inicio.module.css"
 
-function Inicio() {
+function InicioPage() {
 
   return (
     <>
@@ -17,4 +17,4 @@ function Inicio() {
   )
 }
 
-export default Inicio
+export default InicioPage

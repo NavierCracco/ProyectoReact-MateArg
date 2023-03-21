@@ -1,9 +1,10 @@
 .container {
+    font-size: 1.7rem;
+    text-transform: uppercase;
     display: flex;
     justify-content: space-around;
     margin: 4rem;
     padding: 3rem;
-    padding-left: 0;
     background-color: var(--clr-white);
     border-radius: 15px;
     border: #daa8cd solid 2px;
@@ -11,15 +12,40 @@
 }
 
 .container img {
-    width: 50%;
+    width: 40%;
+    border-right: solid 2px var(--clr-thistle);
+    object-position: -4rem;
 }
 
 .containerDetail {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    border-left: solid 2px var(--clr-thistle);
-    padding-left: 2rem;
+}
+
+.containerDetail Button {
+    width: 25rem;
+    height: 3rem;
+    color: var(--clr-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--clr-black);
+    border: solid 2px var(--clr-black);
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .4rem .4rem .8rem var(--clr-thistle),
+      -.4rem -.4rem .8rem var(--clr-white);
+}
+
+.precio {
+    width: 8rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181815;
+    border-radius: 5px
 }
 

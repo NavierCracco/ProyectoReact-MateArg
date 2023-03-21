@@ -11,7 +11,7 @@ const ItemDetailContainer = ({ productos }) => {
     <img src={`../.${producto.imagen}`} alt={producto.titulo} />
         <div className={styles.containerDetail}>
           <h3>{producto.titulo}</h3>
-          <p>{`$ ${producto.precio}`}</p>
+          <p className={styles.precio}>{`$ ${producto.precio}`}</p>
           <Button text={"Agregar al Carrito"}/>
         </div>   
     </div>

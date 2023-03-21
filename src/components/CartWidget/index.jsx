@@ -4,7 +4,7 @@ import { BsCart } from 'react-icons/bs';
 function CartWidget({ text }) {
     return (
       <button className={styles.carrito}>
-        <BsCart /> 
+        <BsCart className={styles.icon}/> 
         <p className={styles.numerito}>{text}</p>
       </button>
       )

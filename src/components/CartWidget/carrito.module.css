@@ -1,11 +1,20 @@
 .carrito {
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: var(--clr-white);
     background-color: transparent;
     font-size: 1.5rem;
     border: 0;
     cursor: pointer;
+    border-radius: 30%;
+}
+
+.icon {
+    position: relative;
+    left: .25rem;
 }
 
 .numerito {
@@ -16,10 +25,11 @@
     font-weight: 500;
     border-radius: 50%;
     position: relative;
-    left: -.5rem;
+    left: -.25rem;
     top: -.5rem;
 }
 
 .carrito:hover {
-    font-size: 1.8rem;
+    background-color: #313131;
+    transition: 1s;
 }

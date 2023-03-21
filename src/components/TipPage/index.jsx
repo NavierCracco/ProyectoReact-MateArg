@@ -1,9 +1,9 @@
-import React from 'react'
+import Titulo from "../Titulo"
 
-function CuraTuMate() {
+const CuraTuMatePage = () => {
   return (
-    <div>Cura Tu Mate</div>
-  )
+    <Titulo titulo={"Matetip :)"}/>
+    )
 }
 
-export default CuraTuMate
+export default CuraTuMatePage

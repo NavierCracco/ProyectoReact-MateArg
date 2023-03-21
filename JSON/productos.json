@@ -129,7 +129,7 @@
     },
     {
         "id":"bombilla-01",
-        "titulo":"Bombilla de alpaca lisa 1",
+        "titulo":"Bombilla de alpaca lisa",
         "imagen":"./img/bombilla-lisa-alpaca.jpg",
         "categoria": {
             "nombre":"Bombillas",
@@ -139,7 +139,7 @@
     },    
     {
         "id":"bombilla-02",
-        "titulo":"Bombillon Pico de Loro 2",
+        "titulo":"Bombillon Pico de Loro",
         "imagen":"./img/bombillon-pico-de-loro-alpaca.jpg",
         "categoria": {
             "nombre":"Bombillas",
@@ -159,7 +159,7 @@
     },    
     {
         "id":"bombilla-04",
-        "titulo":"Bombillon Argentina Campeón 4",
+        "titulo":"Bombillon Argentina Campeón",
         "imagen":"./img/bombillon-messi-campeon.jpg",
         "categoria": {
             "nombre":"Bombillas",
