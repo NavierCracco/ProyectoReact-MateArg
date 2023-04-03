@@ -7,7 +7,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 21000
+        "precio": 21000,
+        "cantidad": 1
     },
     {
         "id":"imperial-02",
@@ -17,7 +18,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 21000
+        "precio": 21000,
+        "cantidad": 1
     },    {
         "id":"imperial-03",
         "titulo":"Mate imperial marron 3",
@@ -26,7 +28,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 21000
+        "precio": 21000,
+        "cantidad": 1
     },    {
         "id":"imperial-04",
         "titulo":"Mate imperial marron 4",
@@ -35,7 +38,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 21000
+        "precio": 21000,
+        "cantidad": 1
     },    
     {
         "id":"imperial-05",
@@ -45,7 +49,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 21000
+        "precio": 21000,
+        "cantidad": 1
     },    
     {
         "id":"imperial-06",
@@ -55,7 +60,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 21000
+        "precio": 21000,
+        "cantidad": 1
     },    
     {
         "id":"imperial-07",
@@ -65,7 +71,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 21000
+        "precio": 21000,
+        "cantidad": 1
     },    
     {
         "id":"torpedo-08",
@@ -75,7 +82,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 18000
+        "precio": 18000,
+        "cantidad": 1
     },
     {
         "id":"torpedo-9",
@@ -85,7 +93,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 18000
+        "precio": 18000,
+        "cantidad": 1
     },
     {
         "id":"torpedo-10",
@@ -95,7 +104,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 18000
+        "precio": 18000,
+        "cantidad": 1
     },
     {
         "id":"stanley-11",
@@ -105,7 +115,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 20000
+        "precio": 20000,
+        "cantidad": 1
     },
     {
         "id":"stanley-12",
@@ -115,7 +126,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 20000
+        "precio": 20000,
+        "cantidad": 1
     },
     {
         "id":"stanley-13",
@@ -125,7 +137,8 @@
             "nombre":"Mates",
             "id":"mates"
         },
-        "precio": 20000
+        "precio": 20000,
+        "cantidad": 1
     },
     {
         "id":"bombilla-01",
@@ -135,7 +148,8 @@
             "nombre":"Bombillas",
             "id":"bombillas"
         },
-        "precio": 7000
+        "precio": 7000,
+        "cantidad": 1
     },    
     {
         "id":"bombilla-02",
@@ -145,7 +159,8 @@
             "nombre":"Bombillas",
             "id":"bombillas"
         },
-        "precio": 11000
+        "precio": 11000,
+        "cantidad": 1
     },   
     {
         "id":"bombilla-03",
@@ -155,7 +170,8 @@
             "nombre":"Bombillas",
             "id":"bombillas"
         },
-        "precio": 7000
+        "precio": 7000,
+        "cantidad": 1
     },    
     {
         "id":"bombilla-04",
@@ -165,7 +181,8 @@
             "nombre":"Bombillas",
             "id":"bombillas"
         },
-        "precio": 27000
+        "precio": 27000,
+        "cantidad": 1
     },
     {
         "id":"termo-01",
@@ -175,7 +192,8 @@
             "nombre":"Termo",
             "id":"termo"
         },
-        "precio": 32000
+        "precio": 32000,
+        "cantidad": 1
     },
     {
         "id":"termo-02",
@@ -185,7 +203,8 @@
             "nombre":"Termo",
             "id":"termo"
         },
-        "precio": 28000
+        "precio": 28000,
+        "cantidad": 1
     },    
     {
         "id":"termo-03",
@@ -195,6 +214,7 @@
             "nombre":"Termo",
             "id":"termo"
         },
-        "precio": 30000
+        "precio": 30000,
+        "cantidad": 1
     }
 ]

@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+.containerDerecha {
+  display: flex;
+  gap: 1rem;
+}
+
+.container .total {
+  width: 10rem;
+  height: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #daa8cd solid 2px;
+  border-radius: 5px;
+  background-color: #ffffff50;
+  box-shadow: 0.5rem 0.5rem 0.8rem #be78ad;
+}
+
+.vaciarCarrito,
+.comprar {
+  width: 10rem;
+  height: 3rem;
+  color: var(--clr-white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #daa8cd solid 2px;
+  border-radius: 5px;
+  background-color: var(--clr-black);
+  border: solid 2px var(--clr-black);
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: 0.4rem 0.4rem 0.8rem var(--clr-thistle),
+    -0.4rem -0.4rem 0.8rem var(--clr-white);
+}
+
+.vaciarCarrito:active,
+.comprar:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem #242424,
+    inset -0.2rem -0.2rem 1rem #2b2b2b;
+  border: solid 2px #2b2b2b;
+}

@@ -24,11 +24,12 @@
     align-items: center;
 }
 
-.containerDetail Button {
+.containerDetail .btnCard {
     width: 25rem;
     height: 3rem;
     color: var(--clr-white);
     font-weight: 500;
+    font-size: 1.2rem;
     text-transform: uppercase;
     background-color: var(--clr-black);
     border: solid 2px var(--clr-black);

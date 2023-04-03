@@ -3,7 +3,6 @@ import ItemListContainer from "../ItemListContainer"
 import styles from "./inicio.module.css"
 
 function InicioPage() {
-
   return (
     <>
       <div className={styles.tituloContainer}>

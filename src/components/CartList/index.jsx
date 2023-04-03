@@ -1,26 +1,42 @@
-import { FaTrashAlt } from 'react-icons/fa';
-import styles from "./cartlist.module.css"
+import { useContext } from "react";
+import { FaTrashAlt } from "react-icons/fa";
+import { dataContext } from "../../contexts/dataContext";
+import { BiHappyBeaming } from "react-icons/bi";
+import styles from "./cartlist.module.css";
+import CartCantidad from "../CartCantidad";
 
 function CartList() {
-  return (
-    <div className={styles.border}>
-        <div className={styles.container}>
-            <h2>Cart List</h2>
-            <div className={styles.productos}>
-                <img src="./img/mate-imperial-marron3.jpg" alt="" />
-                <p>1</p>
-                <p className={styles.titulo}>Mate Imperial Marron</p>
-                <FaTrashAlt />
+  const { cart, eliminarProducto } = useContext(dataContext);
+
+  return cart.length > 0 ? (
+    <div>
+      <div className={styles.container}>
+        <h2>MateLista</h2>
+        {cart.map((producto) => {
+          return (
+            <div key={producto.id} className={styles.productos}>
+              <img src={producto.imagen} alt={producto.titulo} />
+              <CartCantidad producto={producto} />
+              <p className={styles.titulo}>{producto.titulo}</p>
+              <FaTrashAlt
+                className={styles.eliminar}
+                onClick={() => eliminarProducto(producto.id)}
+              />
             </div>
-            <div className={styles.productos}>
-                <img src="./img/termo-stanley-verde.jpg" alt="" />
-                <p>2</p>
-                <p className={styles.titulo}>Termo Stanley Verde</p>
-                <FaTrashAlt />
-            </div>
-        </div>
+          );
+        })}
+      </div>
     </div>
-  )
+  ) : (
+    <div>
+      <div className={styles.container}>
+        <h2>MateLista</h2>
+        <p className={styles.textAgregarProducto}>
+          Agrega productos a tú Lista! <BiHappyBeaming />
+        </p>
+      </div>
+    </div>
+  );
 }
 
-export default CartList
+export default CartList;

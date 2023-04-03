@@ -1,11 +1,11 @@
 .container {
-    height: 6rem;
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 3.5rem;
+  height: 6rem;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 3.5rem;
   }
   
   .container > .logo img {

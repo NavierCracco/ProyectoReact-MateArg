@@ -1,4 +1,18 @@
-.card {
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 2rem;
+    background-color: #ffffff50;
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: #daa8cd solid 2px;
+    box-shadow: .5rem .5rem .9rem #be78ad;
+  }
+
+  .card {
     display: flex;
     width: 22rem;
     height: 11rem;
@@ -40,15 +54,17 @@
     background-color: #18181815;
 }
 
-.productoInfo Button {
+.productoInfo .btnCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.8rem;
     color: var(--clr-white);
     font-weight: 500;
-    font-size: .6rem;
+    font-size: .8rem;
     text-transform: uppercase;
     background-color: var(--clr-black);
     border: solid 2px var(--clr-black);
-    /* background-color: #fcd382;
-    border: solid 2px #fcd382; */
     border-radius: .5rem;
     cursor: pointer;
     transition: all 1s ease;
@@ -56,7 +72,8 @@
       -.4rem -.4rem .8rem var(--clr-white);
 }
 
-.productoInfo Button:active {
-    box-shadow: inset .2rem .2rem 1rem #f7c768,
-      inset -.2rem -.2rem 1rem #f7c054;
+.productoInfo .btnCard:active {
+    box-shadow: inset .2rem .2rem 1rem #242424,
+      inset -.2rem -.2rem 1rem #3d3d3d;
+    border: solid 2px #3d3d3d;
 }

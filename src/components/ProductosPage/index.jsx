@@ -1,14 +1,14 @@
 import React from 'react'
-import ItemList from '../ItemList'
+import ItemListContainer from '../ItemListContainer'
 import Titulo from '../Titulo'
 import styles from "./productos.module.css"
 
-function ProductosPage({ productos }) {
+function ProductosPage() {
   return (
     <>
     <Titulo titulo={"Productos"}/>
     <div className={styles.main}>
-      <ItemList productos={productos}/>
+      <ItemListContainer />
     </div>
     </>
   )

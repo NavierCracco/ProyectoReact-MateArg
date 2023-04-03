@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavLink className={styles.btn} to="/contacto">Contacto</NavLink>
         </div>
         <div className={styles.cart}>
-          <NavLink to="/carrito"><CartWidget text="3"/></NavLink>
+            <NavLink to="/carrito"><CartWidget /></NavLink>
         </div>
     </nav>
   )
