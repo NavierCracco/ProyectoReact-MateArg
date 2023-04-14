@@ -20,8 +20,8 @@ Aquí las siguientes funcionalidades del proyecto:
 ### Configuración del proyecto
 Para ejecutar el proyecto en un entorno local, sigue estos pasos: 
 1. Clona el repositorio en tu equipo.
-      https://github.com/NavierCracco/ProyectoReact-MateArg.git
+>     https://github.com/NavierCracco/ProyectoReact-MateArg.git
 2.  Instalar las dependencias.
-      npm install
+>     npm install
 3.  Ejecutar el proyecto.
-      npm run dev
+>     npm run dev
