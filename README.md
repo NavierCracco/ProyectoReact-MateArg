@@ -2,7 +2,7 @@
 
 ### Descripción del proyecto
 <p>
-**MateArg** es un e-commerce de prueba, de venta de productos como mates, bombillas y termos, en lo cuál, el usuario puede acceder al detalle de cada producto, añadirlo a su carrito de compras y realizar la compra. 
+**MateArg** es un **e-commerce de prueba**, de venta de productos como mates, bombillas y termos, en lo cuál, el usuario puede acceder al detalle de cada producto, añadirlo a su carrito de compras y realizar la compra. 
 </p>
 
 ### Tecnologías
@@ -20,10 +20,8 @@ Aquí las siguientes funcionalidades del proyecto:
 ### Configuración del proyecto
 Para ejecutar el proyecto en un entorno local, sigue estos pasos: 
 1. Clona el repositorio en tu equipo.
-<picture>
-  >     https://github.com/NavierCracco/ProyectoReact-MateArg.git
-</picture>
-3.  Instalar las dependencias.
+>     https://github.com/NavierCracco/ProyectoReact-MateArg.git
+2.  Instalar las dependencias.
 >     npm install
-4.  Ejecutar el proyecto.
+3.  Ejecutar el proyecto.
 >     npm run dev
