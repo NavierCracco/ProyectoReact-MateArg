@@ -1,6 +1,6 @@
-import CartList from "../CartList"
-import ItemListContainer from "../ItemListContainer"
-import styles from "./inicio.module.css"
+import CartList from "../CartList";
+import ItemListContainer from "../ItemListContainer";
+import styles from "./inicio.module.css";
 
 function InicioPage() {
   return (
@@ -8,12 +8,12 @@ function InicioPage() {
       <div className={styles.tituloContainer}>
         <h1>MateArg</h1>
       </div>
-        <div className={styles.main}>
+      <div className={styles.main}>
         <ItemListContainer />
         <CartList />
       </div>
     </>
-  )
+  );
 }
 
-export default InicioPage
+export default InicioPage;

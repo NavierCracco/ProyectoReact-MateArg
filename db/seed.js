@@ -1,12 +1,14 @@
 import { addDoc, collection } from "firebase/firestore";
-import db from "./firebase-config";
-import productos from "../JSON/productos.json";
+import db from "./firebase-config.js";
+import productos from "../productos.js";
 
-const itemsCollectionRef = collection(db,"items");
+const productosCollectionRef = collection(db, "productos");
 
-const promise = productos.map(producto => addDoc(itemsCollectionRef, producto));
+const promise = productos.map((producto) =>
+  addDoc(productosCollectionRef, producto)
+);
 
 Promise.all(promise).then(() => {
-    console.log("done");
-    process.exit(0);
-})
+  console.log("done");
+  process.exit(0);
+});

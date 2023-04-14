@@ -7,7 +7,7 @@ const firebaseConfig = {
   projectId: "ecommerce-d9504",
   storageBucket: "ecommerce-d9504.appspot.com",
   messagingSenderId: "930111042378",
-  appId: "1:930111042378:web:e145c815a9fc885b8607b3"
+  appId: "1:930111042378:web:e145c815a9fc885b8607b3",
 };
 
 const app = initializeApp(firebaseConfig);

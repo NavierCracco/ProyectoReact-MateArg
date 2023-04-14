@@ -1,16 +1,11 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { dataContext } from "../../contexts/dataContext";
 import styles from "./itemListContainer.module.css";
-import axios from "axios";
 
 const ItemListContainer = () => {
-  const [productos, setProductos] = useState([]);
+  const { productos } = useContext(dataContext);
   const { sumarCarrito } = useContext(dataContext);
-
-  useEffect(() => {
-    axios("../JSON/productos.json").then((res) => setProductos(res.data));
-  }, []);
 
   return (
     <div className={styles.container}>

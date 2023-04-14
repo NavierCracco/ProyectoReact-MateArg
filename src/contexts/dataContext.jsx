@@ -1,9 +1,26 @@
-import { createContext, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { createContext, useEffect, useState } from "react";
+import db from "../../db/firebase-config";
 
 const dataContext = createContext();
 
 const DataProvider = ({ children }) => {
+  const [productos, setProductos] = useState([]);
+  const productosRef = collection(db, "productos");
   const [cart, setCart] = useState([]);
+
+  const getProductos = async () => {
+    const productosCollection = await getDocs(productosRef);
+    const productos = productosCollection.docs.map((doc) => ({
+      ...doc.data(),
+      id: doc.id,
+    }));
+    setProductos(productos);
+  };
+
+  useEffect(() => {
+    getProductos();
+  }, []);
 
   const sumarCarrito = (producto) => {
     const productoCantidad = cart.find((item) => item.id == producto.id);
@@ -29,10 +46,24 @@ const DataProvider = ({ children }) => {
     });
     setCart(productoEliminado);
   };
+  const total = cart.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
+
+  const vaciarCarrito = () => {
+    setCart([]);
+  };
 
   return (
     <dataContext.Provider
-      value={{ cart, setCart, sumarCarrito, eliminarProducto }}
+      value={{
+        productos,
+        setProductos,
+        cart,
+        setCart,
+        sumarCarrito,
+        eliminarProducto,
+        vaciarCarrito,
+        total,
+      }}
     >
       {children}
     </dataContext.Provider>

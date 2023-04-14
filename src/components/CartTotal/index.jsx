@@ -1,18 +1,16 @@
 import { useContext } from "react";
 import { dataContext } from "../../contexts/dataContext";
 import styles from "./cartTotal.module.css";
+import { NavLink } from "react-router-dom";
 
 function CartTotal() {
-  const { cart, setCart } = useContext(dataContext);
-  const total = cart.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
-
-  const vaciarCarrito = () => {
-    setCart([]);
-  };
+  const { total, vaciarCarrito } = useContext(dataContext);
 
   return (
     <div className={styles.container}>
-      <button className={styles.comprar}>Comprar</button>
+      <NavLink to={"/carrito/checkout"} className={styles.comprar}>
+        Ir a la Compra
+      </NavLink>
       <div className={styles.containerDerecha}>
         <p className={styles.total}>Total: $ {total}</p>
         <button className={styles.vaciarCarrito} onClick={vaciarCarrito}>
