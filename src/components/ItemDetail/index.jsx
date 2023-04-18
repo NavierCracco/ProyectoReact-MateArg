@@ -12,7 +12,7 @@ function ItemDetail() {
 
   return (
     <>
-      <img src={`../.${producto.imagen}`} alt={producto.titulo} />
+      <img src={producto.imagen} alt={producto.titulo} />
       <div className={styles.containerDetail}>
         <h3>{producto.titulo}</h3>
         <p className={styles.precio}>$ {producto.precio}</p>
